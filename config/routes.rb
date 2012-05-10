@@ -1,5 +1,4 @@
 SampleApp::Application.routes.draw do
-
 #root
 
   root to: 'static_pages#home'
@@ -14,8 +13,9 @@ SampleApp::Application.routes.draw do
 
  #users
   
-  get "users/new"
+  resources :users
   match '/signup', to: 'users#new'
+ 
   
 
   
