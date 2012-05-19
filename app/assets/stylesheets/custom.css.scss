@@ -51,15 +51,16 @@ h1 {
 	letter-spacing: -2px;
 	margin-bottom: 30px;
 	text-align: center;
+	color: #000;
 }
 
-h2 {
+h2 { 
 	font-size: 2.1em;
 	letter-spacing: -1px;
 	margin-bottom: 30px;
 	text-align: center;
 	font-weight: normal;
-	color: #000000;
+	color: #000;
 }
 
 p {
@@ -86,7 +87,6 @@ p {
 	text-decoration: none;
 }
 
-
 /* body */
 
 .hero-unit {
@@ -96,8 +96,14 @@ p {
   -moz-border-radius: 6px;
   border-radius: 6px;
   background-color: #eaeaea;
-
+  background-image: url(/towerbridge.jpg)
 } 
+
+.span4 {
+	background-color: #eaeaea;
+}
+
+.
 
 /* footer */
 
