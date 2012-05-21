@@ -10,7 +10,6 @@ $grayMediumLight: #eaeaea;
 	box-sizing: border-box;
 }
 
-
 /* universal */
 
 html {
@@ -18,10 +17,9 @@ html {
 }
 
 body {
+	font-size:100%;
 	padding-top: 50px;
 	background-color: #fff;
-	background-image: url('..images/sunrise_landscape.jpg');
-	background-repeat: no-repeat;
 }
 
 section {
@@ -64,7 +62,7 @@ h2 {
 }
 
 p {
-	font-size: 1.1em;
+	font-size: 1.0em;
 	line-height: 1.7em;
 }
 
@@ -90,45 +88,28 @@ p {
 /* body */
 
 .hero-unit {
-  padding: 60px;
-  margin-bottom: 30px;
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  border-radius: 6px;
-  background-color: #eaeaea;
-  background-image: url(/towerbridge.jpg)
+	padding: 60px;
+	margin: 30px 5px;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+	background-color: rgba(255,255,255,1);
 } 
 
 .span4 {
-	background-color: #eaeaea;
-}
-
-.
-
-/* footer */
-
-footer {
-	margin-top: 45px;
-	padding-top: 5px;
-	border-top: 1px solid #eaeaea;
-	color: #999;
-	a {
-		color: #222;
-		&:hover {
-			color: #222;
-		}
+	background-color: rgba(00,102,204,0.5);
 	}
-	small {
-		float: left;
+
+.span4:hover {
+	
+	background-color: rgba(00,102,204,1.0);
 	}
-	ul {
-		float: right;
-		list-style: none;
-		li {
-			float: left;
-			margin-left: 10px;
-		}
-	}
+
+.thumbnail {
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+	height: 250px;
 }
 
 
@@ -156,6 +137,35 @@ input, textarea, select, .uneditable-input {
   @extend .error;
  }
 
+
+ /* footer */
+
+footer {
+	margin-top: 45px;
+	padding-top: 5px;
+	border-top: 1px solid #eaeaea;
+	color: #999;
+	a {
+		color: #222;
+		&:hover {
+			color: #222;
+		}
+	}
+	small {
+		float: left;
+	}
+	ul {
+		float: right;
+		list-style: none;
+		li {
+			float: left;
+			margin-left: 10px;
+		}
+	}
+}
+
+ 
+ 
 /* miscellaneous */
 
 .debug_dump {
