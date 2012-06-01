@@ -11,4 +11,9 @@ class StaticPagesController < ApplicationController
   def contact
   end
   
+  def samplelesson
+  end
+  
+  def product
+  end
 end

@@ -11,9 +11,10 @@ class UsersController < ApplicationController
   def create
 	@user = User.new(params[:user])
 	if @user.save
+		UserMailer.welcome_email(@user).deliver
 		sign_in @user
 	    flash[:success] = "Thanks for signing up and welcome to Boost English!"
-		redirect_to @user
+		redirect_to sample_path
     else
       render 'new'
 	end
