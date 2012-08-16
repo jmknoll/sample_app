@@ -1,15 +1,14 @@
 ﻿<header class="navbar navbar-fixed-top" style="margin-bottom: 0px; padding: 0px">
 		<div class="navbar-inner">
 			<div class="container-fluid">
-				<%= link_to "补English BOOST补", root_path, id: "logo" %>
+				<%= link_to "TUTORi English", root_path, id: "logo" %>
 				<nav>
 					<ul class="nav pull-right">
 						<li><%= link_to "Home",		root_path %></li>
 						<% if signed_in? %>
 						<li id="fat-menu" class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-							Account <b class="caret"></b>
-							</a>
+							Account <b class="caret"></b></li>
 						<ul class="dropdown-menu">
 							<li><%=link_to "Profile", current_user %></li>
 							<li><%=link_to "Settings", edit_user_path(current_user) %></li>
@@ -19,13 +18,8 @@
 								<%= link_to "Sign out", signout_path, method: "delete" %>
 							</li>
 						<% else %>
-				
-
-									<%= link_to "Sign in", class: "btn btn-large btn-primary" %>
-							
-								
-							New user? <%= link_to "Sign up now!", signup_path %></li>		
-						
+						<li><%= link_to "Sign in", signin_path %></li>
+						<li><%= link_to "New user? Sign up now!", signup_path %></li>	
 						<% end %>
 				</nav>
 			</div>
